@@ -97,3 +97,21 @@ button{
     color: #E9EED9;
     background-color: #54473F;
 }
+
+.update{
+    margin: 30px;
+}
+
+.update-botao{
+    margin: 10px 0;
+}
+
+.formulario{
+    margin: 20px;
+}
+
+input{
+    width: 40%;
+    padding: 12px;
+    margin: 8px 0;
+}
