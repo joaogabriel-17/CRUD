@@ -75,4 +75,4 @@ cancelButton.addEventListener('click', () => {
 });
 
 // Iniciar render
-renderItems();
+renderItems(); 
