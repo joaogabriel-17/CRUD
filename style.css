@@ -1,8 +1,8 @@
-/* colors:
-    #E9EED9 verde claro
-    #CBD2A4 verde escuro
-    #9A7E6F marrom claro
-    #54473F marrom escuro
+/* Colors:
+    #E9EED9 light green
+    #CBD2A4 dark green
+    #9A7E6F light brown
+    #54473F dark brown
 */
 
 * {
@@ -12,11 +12,11 @@
 
 body {
     background-color: #E9EED9;
+    font-family: Arial, sans-serif;
 }
 
-header{
+header {
     width: 100%;
-    height: auto;
     background-color: #CBD2A4;
     text-align: center;
     padding: 10px;
@@ -26,19 +26,43 @@ h1 {
     font-family: Impact, fantasy;
     font-weight: 300;   
     font-size: 70px;
+    color: #54473F;
 }
 
-nav {
-    margin: 10px;
-    padding: 10px;
+.criar {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    background-color: #CBD2A4;
+    color: #54473F;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-div {
-    font-family: Blippo, fantasy;
+.criar:hover {
+    color: #E9EED9;
+    background-color: #54473F;
 }
 
-button{
+.form-container {
+    display: none; /* Hide the form initially */
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #9A7E6F;
+    padding: 20px;
     border-radius: 8px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .grid-container {
@@ -49,7 +73,6 @@ button{
 }
 
 .grid-item {
-    border: 50px;
     border-radius: 10px;
     padding: 15px;
     font-size: 30px;
@@ -69,49 +92,18 @@ button{
     margin: 10px 0;
 }
 
-.botao{
-    padding: 15px;
+.botao {
+    padding: 10px;
+    margin: 5px;
     border: none;
     text-align: center;
     background-color: #CBD2A4;
     cursor: pointer;
     transition-duration: 0.4s;
+    border-radius: 8px;
 }
 
-.botao:hover{
+.botao:hover {
     color: #CBD2A4;
     background-color: #54473F;
-}
-
-.criar{
-    margin: 20px 10px 5px 10px;
-    padding: 15px;
-    border: none;
-    text-align: center;
-    background-color: #CBD2A4;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-
-.criar:hover{
-    color: #E9EED9;
-    background-color: #54473F;
-}
-
-.update{
-    margin: 30px;
-}
-
-.update-botao{
-    margin: 10px 0;
-}
-
-.formulario{
-    margin: 20px;
-}
-
-input{
-    width: 40%;
-    padding: 12px;
-    margin: 8px 0;
 }
