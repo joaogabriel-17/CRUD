@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CRUD</title>
+    <title>Sistema de cadastro</title>
 </head>
 <body>
     <header>
-        <h1>CRUD</h1>
+        <h1>Sistema de cadastro de funcionarios</h1>
     </header>
     <main>
         <div>
             <button class="criar">Criar</button>
         </div>
+        <div class="form-container" id="form-container">
+            <input type="text" id="item-title" placeholder="Nome">
+            <input type="text" id="item-description" placeholder="Função">
+            <button class="botao" id="save-button">Adicionar</button>
+            <button class="botao" id="cancel-button">Cancelar</button>
+        </div>
         <div class="grid-container">
-            <div class="grid-item">
-                <h3 class="titulo">Título</h3>
-                <p class="descricao">Descrição do item.</p>
-                <button class="botao">Atualizar</button>
-            </div>
-            <div class="grid-item">B</div>
-            <div class="grid-item">C</div>
+            <!-- os funcionarios serão adicionados aqui!-->
         </div>
     </main>
     <footer></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
