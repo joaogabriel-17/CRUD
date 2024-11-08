@@ -10,9 +10,9 @@ let items = [];
 let isEditing = false;
 let editIndex = null;
 
-// Render items in the grid
+// Render items no grid
 function renderItems() {
-    gridContainer.innerHTML = ''; // Clear current items
+    gridContainer.innerHTML = ''; // limpar os itens atuais
     items.forEach((item, index) => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('grid-item');
@@ -28,7 +28,7 @@ function renderItems() {
     });
 }
 
-// Show form to create a new item
+// mostrar formulario de novo item
 criarButton.addEventListener('click', () => {
     formContainer.style.display = 'block';
     titleInput.value = '';
@@ -36,7 +36,7 @@ criarButton.addEventListener('click', () => {
     isEditing = false;
 });
 
-// Save item (either new or updated)
+// Salvar intem (salvar ou dar update)
 saveButton.addEventListener('click', () => {
     const title = titleInput.value;
     const description = descriptionInput.value;
@@ -52,7 +52,7 @@ saveButton.addEventListener('click', () => {
     }
 });
 
-// Start editing an existing item
+// editar item
 function startEditing(index) {
     formContainer.style.display = 'block';
     titleInput.value = items[index].title;
@@ -61,7 +61,7 @@ function startEditing(index) {
     editIndex = index;
 }
 
-// Delete an item
+// Deletar um item
 function deleteItem(index) {
     if (confirm("Tem certeza que deseja excluir este item?")) {
         items.splice(index, 1);
@@ -69,10 +69,10 @@ function deleteItem(index) {
     }
 }
 
-// Cancel button hides the form without saving
+// cancelar sem salvar
 cancelButton.addEventListener('click', () => {
     formContainer.style.display = 'none';
 });
 
-// Initial render
+// Iniciar render
 renderItems();
